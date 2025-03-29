@@ -17,25 +17,31 @@ li {
 
 /* ============================ COMPONENTS ============================ */
 .btn {
-  position: absolute; /* Positions the button absolutely */
-  top: 20px; /* Sets the distance from the top to 20px */
-  left: 250px; /* Sets the distance from the left to 250px */
-  height: 50px; /* Sets the button's height to 50px */
-  width: 50px; /* Sets the button's width to 50px */
-  border-radius: 50%; /* Makes the button round by setting the border radius to 50% */
-  border: none; /* Removes the button's border */
+  position: absolute;
+  top: 20px;
+  left: 250px;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border: none;
   background-color: var(
     --btnBg
-  ); /* Sets the button's background color based on the theme */
-  color: var(
-    --btnFontColor
-  ); /* Sets the button's font color based on the theme */
+  ); /* Button background color based on the theme */
+  color: var(--btnFontColor); /* Button text color based on the theme */
+  transition: background-color 0.3s, color 0.3s; /* Smooth transition for color changes */
 }
 
+.btn:hover,
 .btn:focus {
-  outline-style: none; /* Removes the default outline style when the button is focused */
   outline: 2px solid var(--btnFontColor); /* Adds a visible outline */
   outline-offset: 4px; /* Adds space between the outline and the button */
+}
+
+.btn:active {
+  background-color: var(
+    --btnFontColor
+  ); /* Inverts colors when the button is active */
+  color: var(--btnBg); /* Inverts text color when the button is active */
 }
 
 #msg {
