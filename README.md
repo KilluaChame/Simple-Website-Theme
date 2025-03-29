@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Simple Website
 
 This is a simple website project that demonstrates the use of light and dark themes using HTML, CSS, and JavaScript.
@@ -21,3 +22,7 @@ This is a simple website project that demonstrates the use of light and dark the
 ## Demo
 
 [Live Demo]()
+=======
+# Simple-Website-Theme
+This is a simple website project that demonstrates the use of light and dark themes using HTML, CSS, and JavaScript.
+>>>>>>> 03dbaa6df11c4d6cf1155e5902aaab25244c613f
