@@ -1,22 +1,22 @@
 /* ============================ STRICT MODE ============================ */
-'use strict';
+'use strict'; // Enables strict mode for better error handling
 
 /* ============================ SELECTORS ============================ */
-const switcher = document.querySelector('.btn'); // Selects the toggle button
+const button = document.querySelector('.btn'); // Selects the button element
+const body = document.body; // Selects the body element
 
-/* ============================ EVENT LISTENERS ============================ */
-switcher.addEventListener('click', function () {
-    /* ============================ THEME TOGGLING ============================ */
-    document.body.classList.toggle('dark-theme'); // Toggles between themes
-
-    /* ============================ BUTTON TEXT ============================ */
-    var className = document.body.className; // Gets the current class of the body
-    if (className == 'light-theme') {
-        this.textContent = 'Dark'; // Changes the button text to "Dark"
-    } else {
-        this.textContent = 'Light'; // Changes the button text to "Light"
-    }
-
-    /* ============================ LOGGING ============================ */
-    console.log('Current class name: ' + className); // Logs the current class name to the console
+/* ============================ EVENT LISTENER ============================ */
+// Adds a click event listener to the button
+button.addEventListener('click', () => {
+  /* ============================ THEME TOGGLE LOGIC ============================ */
+  // Checks if the current theme is light
+  if (body.classList.contains('light-theme')) {
+    body.classList.remove('light-theme'); // Removes the light theme
+    body.classList.add('dark-theme'); // Adds the dark theme
+    button.textContent = 'Light'; // Updates the button text to "Light"
+  } else {
+    body.classList.remove('dark-theme'); // Removes the dark theme
+    body.classList.add('light-theme'); // Adds the light theme
+    button.textContent = 'Dark'; // Updates the button text to "Dark"
+  }
 });

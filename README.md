@@ -21,3 +21,7 @@ This is a simple website project that demonstrates the use of light and dark the
 ## Demo
 
 [Live Demo](https://KilluaChame.github.io/Simple-Website-Theme/)
+
+## About
+
+This project was developed as part of a course from Fundação Bradesco.

@@ -1,6 +1,6 @@
 /* ============================ GLOBAL STYLES ============================ */
 body {
-  font-family: monospace; /* Sets the default font to monospace */
+  font-family: monospace; /* Sets the default font for the body to monospace */
 }
 
 ul {
@@ -17,21 +17,25 @@ li {
 
 /* ============================ COMPONENTS ============================ */
 .btn {
-  position: absolute; /* Sets the button's position to absolute */
+  position: absolute; /* Positions the button absolutely */
   top: 20px; /* Sets the distance from the top to 20px */
   left: 250px; /* Sets the distance from the left to 250px */
   height: 50px; /* Sets the button's height to 50px */
   width: 50px; /* Sets the button's width to 50px */
   border-radius: 50%; /* Makes the button round by setting the border radius to 50% */
   border: none; /* Removes the button's border */
-  background-color: var(--btnBg); /* Sets the button's background color */
+  background-color: var(
+    --btnBg
+  ); /* Sets the button's background color based on the theme */
+  color: var(
+    --btnFontColor
+  ); /* Sets the button's font color based on the theme */
 }
 
 .btn:focus {
-  outline-style: none; /* Removes the outline style when the button is focused */
+  outline-style: none; /* Removes the default outline style when the button is focused */
   outline: 2px solid var(--btnFontColor); /* Adds a visible outline */
   outline-offset: 4px; /* Adds space between the outline and the button */
-  color: var(--btnFontColor); /* Sets the button's font color */
 }
 
 #msg {
@@ -39,8 +43,6 @@ li {
 }
 
 /* ============================ THEMES ============================ */
-/* Variables and styles related to themes */
-
 :root {
   --green: #00ff00; /* Defines the green color */
   --white: #ffffff; /* Defines the white color */
@@ -48,26 +50,23 @@ li {
 }
 
 .light-theme {
-  --bg: var(--white); /* Sets the background color to white */
-  --fontcolor: var(--black); /* Sets the font color to black */
-  --btnBg: var(--black); /* Sets the button background color to black */
-  --btnFontColor: var(--white); /* Sets the button font color to white */
+  --bg: var(--white); /* Background color for the light theme */
+  --fontcolor: var(--black); /* Font color for the light theme */
+  --btnBg: var(--black); /* Button background color for the light theme */
+  --btnFontColor: var(--white); /* Button font color for the light theme */
 }
 
 .dark-theme {
-  --bg: var(--black); /* Sets the background color to black */
-  --fontcolor: var(--green); /* Sets the font color to green */
-  --btnBg: var(--white); /* Sets the button background color to white */
-  --btnFontColor: var(--black); /* Sets the button font color to black */
+  --bg: var(--black); /* Background color for the dark theme */
+  --fontcolor: var(--green); /* Font color for the dark theme */
+  --btnBg: var(--white); /* Button background color for the dark theme */
+  --btnFontColor: var(--black); /* Button font color for the dark theme */
 }
 
-* {
-  color: var(--fontcolor); /* Sets the font color based on the current theme */
-  font-family: helvetica; /* Sets the default font to helvetica */
-}
-
+/* ============================ BODY STYLES ============================ */
 body {
-  background: var(
+  background-color: var(
     --bg
-  ); /* Sets the background color based on the current theme */
+  ); /* Sets the background color based on the theme */
+  color: var(--fontcolor); /* Sets the font color based on the theme */
 }
