@@ -1,0 +1,35 @@
+<!-- ============================ DOCUMENT HEADER ============================ -->
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <!-- ============================ PAGE HEADER ============================ -->
+        <meta charset="UTF-8"> <!-- Sets the character encoding to UTF-8 -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Makes the page responsive -->
+        <title>Simple website</title> <!-- Page title displayed in the browser tab -->
+        <link rel="stylesheet" href="main.css"> <!-- Link to the external CSS file -->
+    </head>
+
+    <body class="light-theme">
+        <!-- ============================ MAIN CONTENT ============================ -->
+        <h1>Task list</h1> <!-- Main title of the page -->
+        <p id="msg">Current tasks:</p> <!-- Paragraph with a unique identifier (id) -->
+        <ul>
+            <!-- Task list -->
+            <li Class="List">Add visual styles</li> <!-- List item with a class -->
+            <li Class="List">Add light and dark themes</li> <!-- Another list item with a class -->
+            <li> Enable switching the theme</li> <!-- List item without a class -->
+        </ul>
+
+        <!-- ============================ THEME TOGGLE BUTTON ============================ -->
+        <div>
+            <button class="btn">Dark</button> <!-- Button with the "btn" class -->
+        </div>
+
+        <!-- ============================ SCRIPTS ============================ -->
+        <script src="app.js"></script> <!-- Link to the external JavaScript file -->
+        <noscript>
+            <!-- Message displayed if JavaScript is disabled in the browser -->
+            <p>JavaScript is disabled. Please enable it to use this website.</p>
+        </noscript>
+    </body>
+</html>
