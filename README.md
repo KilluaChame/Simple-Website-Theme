@@ -20,4 +20,4 @@ This is a simple website project that demonstrates the use of light and dark the
 
 ## Demo
 
-[Live Demo]([Live Demo](https://KilluaChame.github.io/Simple-Website-Theme/))
+[Live Demo](https://KilluaChame.github.io/Simple-Website-Theme/)
