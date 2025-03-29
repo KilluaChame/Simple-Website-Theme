@@ -28,8 +28,8 @@ li {
     outline-style: none; /* Removes the outline style when the button is focused */
     outline: 2px solid var(--btnFontColor); /* Adds a visible outline */
     outline-offset: 4px; /* Adds space between the outline and the button */
+    color: var(--btnFontColor); /* Sets the button's font color */
   }
-  color: var(--btnFontColor); /* Sets the button's font color */
   background-color: var(--btnBg); /* Sets the button's background color */
 }
 
