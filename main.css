@@ -15,6 +15,18 @@ li {
   list-style: square; /* Sets the list style to squares */
 }
 
+/* ============================ TASK LIST ============================ */
+#msg {
+  font-size: 1.2rem; /* Increases the font size (adjust as needed) */
+  font-family: monospace; /* Keeps the monospace font style */
+}
+
+ul {
+  list-style: none; /* Removes the default bullet points from the list */
+  padding: 0; /* Removes default padding from the list */
+  margin: 0; /* Removes default margin from the list */
+}
+
 /* ============================ COMPONENTS ============================ */
 .btn {
   position: absolute;
